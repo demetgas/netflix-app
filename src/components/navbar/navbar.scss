@@ -8,11 +8,21 @@
   align-items: center;
   justify-content: space-between;
   height: 70px;
-
-  .img1 {
-    height: 40px;
+  .left {
+    display: flex;
+    align-items: center;
+    img {
+      height: 40px;
+    }
   }
-  .img2 {
-    height: 70px;
+  .right {
+    display: flex;
+    align-items: center;
+    .img1 {
+      height: 60px;
+      border-radius: 10px;
+      object-fit:cover;
+      cursor: pointer;
+    }
   }
 }
