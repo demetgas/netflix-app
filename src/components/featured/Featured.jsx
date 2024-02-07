@@ -35,10 +35,7 @@ export default function Featured({ type }) {
           alt=""
         />
         <span className="desc">
-          BTS in the soop tetur adipisicing elit. Vitae
-          adipisci repellendus eum quasi illo, velit numquam, maxime tempora
-          sint deleniti, aliquid qui? Facilis, adipisci! Ratione hic repudiandae
-          temporibus eum earum?
+        BTS In the Soop (stylized as BTS In the SOOP, Korean: 인더숲 BTS편; RR: Indeosup BTS-pyeon; lit. In the Forest: BTS edition) is a South Korean reality series created by Big Hit Entertainment and Big Hit Three Sixty, starring boy band BTS. 
         </span>
         <div className="buttons">
           <button className="play">
