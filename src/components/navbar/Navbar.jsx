@@ -1,4 +1,5 @@
 import "./navbar.scss";
+import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -16,7 +17,9 @@ const Navbar = () => {
           <span>My List</span>
         </div>
         <div className="right">
+          <Search />
           <span>KID</span>
+          <Notifications />
         </div>
       </div>
     </div>
