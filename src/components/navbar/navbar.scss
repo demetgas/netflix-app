@@ -4,7 +4,13 @@
 
 .container {
   padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   .img1 {
     height: 40px;
+  }
+  .img2 {
+    height: 50px;
   }
 }
