@@ -4,7 +4,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="container">
         <div className="left">
-          <img className="img1"
+          <img
+            className="img1"
             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
             alt=""
           />
@@ -14,7 +15,9 @@ const Navbar = () => {
           <span>New and Popular</span>
           <span>My List</span>
         </div>
-        <div className="right"></div>
+        <div className="right">
+          <span>KID</span>
+        </div>
       </div>
     </div>
   );
