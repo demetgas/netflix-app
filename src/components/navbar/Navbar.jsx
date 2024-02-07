@@ -1,9 +1,14 @@
-import "./navbar.scss"
+import "./navbar.scss";
 
 const Navbar = () => {
   return (
-    <div className="navbar">Navbar</div>
-  )
-}
+    <div className="navbar">
+      <div className="container">
+        <div className="left"></div>
+        <div className="right"></div>
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;
