@@ -31,11 +31,14 @@ export default function Featured({ type }) {
       />
       <div className="info">
         <img
-          src="https://m.media-amazon.com/images/M/MV5BN2E2ZDA4YTktZmQ0Ni00ZjI0LWFhOGItMTkwZDg5MWYxNGQ0XkEyXkFqcGdeQXVyNTI5NjIyMw@@._V1_.jpg"
+          src="https://www.pngkey.com/png/full/466-4669366_white-chicks-image-white-chicks-movie-poster.png"
           alt=""
         />
         <span className="desc">
-        BTS In the Soop (stylized as BTS In the SOOP, Korean: 인더숲 BTS편; RR: Indeosup BTS-pyeon; lit. In the Forest: BTS edition) is a South Korean reality series created by Big Hit Entertainment and Big Hit Three Sixty, starring boy band BTS. 
+          Two FBI agent brothers, Marcus (Marlon Wayans) and Kevin Copeland
+          (Shawn Wayans), accidentally foil a drug bust. As punishment, they are
+          forced to escort a pair of socialites (Anne Dudek, Rochelle Aytes) to
+          the Hamptons, where they're going to be used as bait for a kidnapper.
         </span>
         <div className="buttons">
           <button className="play">
