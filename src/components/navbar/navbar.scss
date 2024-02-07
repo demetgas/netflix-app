@@ -2,7 +2,9 @@
   color: white;
 }
 
-.img1 {
-  height: 100px;
-  margin: 10px;
+.container {
+  padding: 10px 50px;
+  .img1 {
+    height: 40px;
+  }
 }

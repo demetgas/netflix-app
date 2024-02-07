@@ -5,7 +5,7 @@ const Navbar = () => {
       <div className="container">
         <div className="left">
           <img className="img1"
-            src="https://upload.wikimedia.org/wikipedia/commons/3/30/StaryKIDSLOGO.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
             alt=""
           />
           <span>Home</span>
