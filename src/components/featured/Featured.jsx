@@ -26,7 +26,7 @@ export default function Featured({ type }) {
         </div>
       )}
       <img
-        src="https://www.allkpop.com/upload/2022/06/content/051737/1654465030-a2b874f2-0fa1-49d8-8e86-b690bdf98a3e.jpeg"
+        src="https://images.ctfassets.net/co0pvta7hzrh/3AzyT7Cv2cDZk67HHr8zCe/56b3823bc62abcddbc52ae78b71eb270/Typeform-Blog-BlackFriday-Cover-AskAwesomely.jpg?fm=webp&q=75"
         alt=""
       />
       <div className="info">
