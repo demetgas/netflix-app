@@ -11,7 +11,7 @@ export default function List() {
     <div className="list">
       <span className="listTitle">Continue to watch</span>
       <div className="wrapper">
-        <ArrowBackIosOutlined className="arrows" />
+        <ArrowBackIosOutlined className="arrows left" />
         <div className="container">
           <ListItem />
           <ListItem />
@@ -27,7 +27,7 @@ export default function List() {
           <ListItem />
           <ListItem />
         </div>
-        <ArrowForwardIosOutlined className="arrows"/>
+        <ArrowForwardIosOutlined className="arrows right"/>
       </div>
     </div>
   );
