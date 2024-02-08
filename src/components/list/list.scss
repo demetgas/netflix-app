@@ -7,4 +7,11 @@
     font-weight: 500;
     margin-left: 50px;
   }
+  .wrapper {
+    .container {
+      margin-left: 50px;
+      display: flex;
+      width: max-content;
+    }
+  }
 }
