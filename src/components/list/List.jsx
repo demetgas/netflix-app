@@ -10,6 +10,9 @@ export default function List() {
   const listRef = useRef();
   const handleClick = (direction) => {
     if (direction === "left") {
+      listRef.current.style.transform = `translateX(230px)`;
+    } else {
+      listRef.current.style.transform = `translateX(-230px)`;
     }
   };
   return (
@@ -20,7 +23,7 @@ export default function List() {
           onClick={() => handleClick("left")}
           className="arrows left"
         />
-        <div className="container">
+        <div className="container" ref={listRef}>
           <ListItem />
           <ListItem />
           <ListItem />
