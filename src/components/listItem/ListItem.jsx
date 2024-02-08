@@ -10,7 +10,7 @@ export default function ListItem() {
   return (
     <div className="listItem">
       <img
-        src="https://i1.sndcdn.com/artworks-sH9jc1uxQUfOQKUF-wsqYqA-t500x500.jpg"
+        src="https://upload.wikimedia.org/wikipedia/en/0/04/The_Addams_Family.jpg"
         alt=""
       />
       <div className="itemInfo">
