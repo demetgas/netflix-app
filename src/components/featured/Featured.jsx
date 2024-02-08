@@ -26,7 +26,7 @@ export default function Featured({ type }) {
         </div>
       )}
       <img
-        src="https://images.ctfassets.net/co0pvta7hzrh/3AzyT7Cv2cDZk67HHr8zCe/56b3823bc62abcddbc52ae78b71eb270/Typeform-Blog-BlackFriday-Cover-AskAwesomely.jpg?fm=webp&q=75"
+        src="https://static1.srcdn.com/wordpress/wp-content/uploads/2020/06/Maitland-Ward-Marlon-Wayans-Anne-Dudek-and-Shawn-Wayans-in-White-Chicks.jpg"
         alt=""
       />
       <div className="info">
