@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./listItem.scss";
 import {
   Add,
@@ -9,6 +10,10 @@ import {
 
 export default function ListItem({ index }) {
   const [isHovered, setIsHovered] = useState(false);
+  const history = useNavigate();
+  const clicked = () => {
+    history("/watch");
+  };
   const trailer =
     "https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761";
   return (
@@ -27,7 +32,7 @@ export default function ListItem({ index }) {
           <video src={trailer} autoPlay={true} loop />
           <div className="itemInfo">
             <div className="icons">
-              <PlayArrow />
+              <PlayArrow onClick={clicked} />
               <Add />
               <ThumbUpAltOutlined />
               <ThumbDownAltOutlined />
