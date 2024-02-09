@@ -38,7 +38,11 @@
       height: 300px;
       padding: 30px;
       border-radius: 5px;
-      background-color: var(--main-color);
+      background: linear-gradient(
+        to top,
+        transparent 0%,
+        rgba(8, 8, 8, 0.9) 0%
+      );
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -73,7 +77,7 @@
       b {
         color: white;
       }
-      
+
       a {
         color: white;
       }
