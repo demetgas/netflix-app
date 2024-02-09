@@ -3,6 +3,11 @@
   height: 100vh;
   background: url("https://genotipia.com/wp-content/uploads/2020/04/Netflix-Background-prueba-1.jpg");
   .top {
-  
-}
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
 }
