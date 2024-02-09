@@ -25,6 +25,11 @@ export default function ListItem() {
           <span>+9</span>
           <span>1993</span>
         </div>
+        <div className="desc">
+          The Addams Family try to rescue their beloved Uncle Fester from his
+          gold-digging new love, a black widow named Debbie.
+        </div>
+        <div className="genre">Action,Fantasy,Dark Comedy,Horror</div>
       </div>
     </div>
   );
