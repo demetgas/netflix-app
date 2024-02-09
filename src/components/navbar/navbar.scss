@@ -28,6 +28,12 @@
     span {
       margin-right: 20px;
       cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+        color: rgba(107, 35, 35, 0.6);
+        text-decoration: underline;
+      }
     }
   }
   .right {
@@ -36,12 +42,22 @@
     .icon {
       margin: 0px 15px;
       cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+        color: rgba(107, 35, 35, 0.6);
+        text-decoration: underline;
+      }
     }
     .img1 {
       height: 60px;
       border-radius: 10px;
       object-fit: cover;
       cursor: pointer;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     .profile {
       .options {
