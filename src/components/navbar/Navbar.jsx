@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./navbar.scss";
 import { ArrowDropDown, Notifications, Search } from "@material-ui/icons";
 import { useNavigate } from "react-router-dom";
-const Navbar = () => {
+const Navbar = ({ setType }) => {
   const navigate = useNavigate();
   const logOut = () => {
     navigate("/register");
@@ -20,9 +20,9 @@ const Navbar = () => {
             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
             alt=""
           />
-          <span>Home</span>
-          <span>Series</span>
-          <span>Movies</span>
+          <span onClick={() => setType("")}>Home</span>
+          <span onClick={() => setType("Series")}>Series</span>
+          <span onClick={() => setType("Movies")}>Movies</span>
           <span>New and Popular</span>
           <span>My List</span>
         </div>
