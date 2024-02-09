@@ -3,6 +3,30 @@ import "./login.scss";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const log = () => {
+    if (email.trim() === "" && password.trim() === "") {
+      setError("Please fill in both email and password.");
+      return;
+    }
+
+    if (email.trim() === "") {
+      setError("Please fill in the email.");
+      return;
+    }
+
+    if (password.trim() === "") {
+      setError("Please fill in the password.");
+      return;
+    }
+    setError("");
+    navigate("/");
+  };
+
   return (
     <div className="login">
       <div className="top">
@@ -17,9 +41,20 @@ export default function Login() {
       <div className="container">
         <form action="">
           <h1>Log In</h1>
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="password" />
-          <button className="loginBtn">Log In</button>
+          <input
+            type="email"
+            placeholder="email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <button className="loginBtn" onClick={log}>
+            Log In
+          </button>
+          <span>{error}</span>
           <span>
             <a href="/register">
               New to Netflix? <b>Sign up now.</b>
