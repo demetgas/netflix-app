@@ -15,6 +15,19 @@ export default function Login() {
         </div>
       </div>
       <div className="container">
+        <form action="">
+          <h1>Sign In</h1>
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="password" />
+          <button className="loginBtn">Log In</button>
+          <span>
+            New to Netflix? <b>Sign up now.</b>
+          </span>
+          <small>
+            This page is protected by Google reCAPTCHA to ensure you're not a
+            bot. Learn more.
+          </small>
+        </form>
       </div>
     </div>
   );
