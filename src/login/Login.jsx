@@ -21,11 +21,15 @@ export default function Login() {
           <input type="password" placeholder="password" />
           <button className="loginBtn">Log In</button>
           <span>
-            New to Netflix? <b>Sign up now.</b>
+            <a href="/register">
+              New to Netflix? <b>Sign up now.</b>
+            </a>
           </span>
           <small>
-            This page is protected by Google reCAPTCHA to ensure you're not a
-            bot.<b> Learn more.</b>
+            <a href="/">
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot.<b> Learn more.</b>{" "}
+            </a>
           </small>
         </form>
       </div>
