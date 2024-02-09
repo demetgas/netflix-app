@@ -1,6 +1,9 @@
+import { useRef, useState } from "react";
 import "./register.scss";
 
 export default function Register() {
+  const [email, setEmail] = useState("");
+  const emailRef = useRef();
   return (
     <div className="register">
       <div className="top">
@@ -20,7 +23,7 @@ export default function Register() {
           Ready to watch? Enter your email to create or restart your membership.
         </p>
         <div className="input">
-          <input type="email" placeholder="email" />
+          <input type="email" placeholder="email" ref={emailRef} />
           <button className="registerBtn">Sign Up</button>
         </div>
       </div>
