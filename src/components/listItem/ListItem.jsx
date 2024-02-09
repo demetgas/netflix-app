@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./listItem.scss";
 import {
   Add,
@@ -7,8 +8,13 @@ import {
 } from "@material-ui/icons";
 
 export default function ListItem() {
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <div className="listItem">
+    <div
+      className="listItem"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <img
         src="https://upload.wikimedia.org/wikipedia/en/0/04/The_Addams_Family.jpg"
         alt=""
