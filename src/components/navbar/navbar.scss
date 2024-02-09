@@ -24,6 +24,10 @@
     img {
       height: 40px;
       margin-right: 40px;
+      transition: transform 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
     }
     span {
       margin-right: 20px;
@@ -54,7 +58,7 @@
       border-radius: 10px;
       object-fit: cover;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: transform 0.5s ease;
       &:hover {
         transform: scale(1.1);
       }
@@ -62,7 +66,9 @@
     .profile {
       .options {
         display: none;
-        background-color: var(--main-color);
+        -webkit-box-shadow: 1px -2px 18px 4px #02080c;
+        box-shadow: 1px -2px 18px 4px #000000;
+        background-color: rgba(0, 0, 0, 0.6);
         border-radius: 5px;
       }
       span {
