@@ -3,7 +3,15 @@ import "./register.scss";
 
 export default function Register() {
   const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const emailRef = useRef();
+  const passwordRef = useRef();
+  const start = () => {
+    setEmail(emailRef.current.value);
+  };
+  const finish = () => {
+    setPassword(passwordRef.current.value);
+  };
   return (
     <div className="register">
       <div className="top">
@@ -22,10 +30,21 @@ export default function Register() {
         <p>
           Ready to watch? Enter your email to create or restart your membership.
         </p>
-        <div className="input">
-          <input type="email" placeholder="email" ref={emailRef} />
-          <button className="registerBtn">Sign Up</button>
-        </div>
+        {!email ? (
+          <div className="input">
+            <input type="email" placeholder="email" ref={emailRef} />
+            <button className="registerBtn" onClick={start}>
+              Next
+            </button>
+          </div>
+        ) : (
+          <form className="input">
+            <input type="password" placeholder="password" ref={passwordRef} />
+            <button className="registerBtn" onClick={finish}>
+              Sign Up
+            </button>
+          </form>
+        )}
       </div>
     </div>
   );
