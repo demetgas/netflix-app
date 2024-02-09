@@ -62,7 +62,7 @@
       height: 50px;
       border-radius: 5px;
 
-      input{
+      input {
         flex: 9;
         height: 100%;
         border: none;
@@ -71,6 +71,12 @@
     }
     .registerBtn {
       flex: 3;
+      height: 100%;
+      background-color: red;
+      border: none;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
     }
   }
 }
