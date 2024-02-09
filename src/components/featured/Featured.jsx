@@ -46,8 +46,8 @@ export default function Featured({ type }) {
           the Hamptons, where they're going to be used as bait for a kidnapper.
         </span>
         <div className="buttons">
-          <button className="play">
-            <PlayArrow onClick={clicked} />
+          <button className="play" onClick={clicked}>
+            <PlayArrow  />
             <span>Play</span>
           </button>
           <button className="more">

@@ -1,13 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import "./watch.scss";
 import { ArrowBackOutlined } from "@material-ui/icons";
 
 export default function Watch() {
+  const navigate = useNavigate();
+  const clicked = () => {
+    navigate("/");
+  };
   return (
     <div className="watch">
-      <div className="back">
+      <button className="back" onClick={clicked}>
         <ArrowBackOutlined />
-        Home
-      </div>
+        <span>Home</span>
+      </button>
+
       <video
         className="video"
         autoPlay
