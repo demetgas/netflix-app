@@ -3,20 +3,8 @@ import "./login.scss";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const navigate = useNavigate();
-  const emailRef = useRef();
-  const passwordRef = useRef();
-  const start = () => {
-    setEmail(emailRef.current.value);
-  };
-  const finish = () => {
-    setPassword(passwordRef.current.value);
-    navigate("/");
-  };
   return (
-    <div className="register">
+    <div className="login">
       <div className="top">
         <div className="wrapper">
           <img
@@ -24,30 +12,9 @@ export default function Login() {
             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
             alt=""
           />
-          <button className="loginBtn">Sign In</button>
         </div>
       </div>
       <div className="container">
-        <h1>Unlimited movies, Tv shows, and more.</h1>
-        <h2>Watch anywhere. Cancel anytime.</h2>
-        <p>
-          Ready to watch? Enter your email to create or restart your membership.
-        </p>
-        {!email ? (
-          <div className="input">
-            <input type="email" placeholder="email" ref={emailRef} />
-            <button className="registerBtn" onClick={start}>
-              Next
-            </button>
-          </div>
-        ) : (
-          <form className="input">
-            <input type="password" placeholder="password" ref={passwordRef} />
-            <button className="registerBtn" onClick={finish}>
-              Sign Up
-            </button>
-          </form>
-        )}
       </div>
     </div>
   );
