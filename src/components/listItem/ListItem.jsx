@@ -7,11 +7,12 @@ import {
   ThumbUpAltOutlined,
 } from "@material-ui/icons";
 
-export default function ListItem() {
+export default function ListItem(index) {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
       className="listItem"
+      style={{ left: isHovered && index * 225 - 50 }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
