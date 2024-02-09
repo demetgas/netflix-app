@@ -6,6 +6,7 @@ export default function Register() {
       <div className="top">
         <div className="wrapper">
           <img
+            className="logo"
             src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
             alt=""
           />
