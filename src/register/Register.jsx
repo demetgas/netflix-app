@@ -1,9 +1,11 @@
 import { useRef, useState } from "react";
 import "./register.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
   const emailRef = useRef();
   const passwordRef = useRef();
   const start = () => {
@@ -11,6 +13,7 @@ export default function Register() {
   };
   const finish = () => {
     setPassword(passwordRef.current.value);
+    navigate("/");
   };
   return (
     <div className="register">
