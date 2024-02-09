@@ -48,10 +48,11 @@ export default function Register() {
             </button>
           </form>
         )}
-        <a href="/login"><p>
-          Already have an account? <b>Click to Log in.</b>
-        </p></a>
-        
+        <a href="/login">
+          <p>
+            Already have an account? <b>Click to Log in.</b>
+          </p>
+        </a>
       </div>
     </div>
   );
