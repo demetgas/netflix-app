@@ -3,9 +3,9 @@ import "./featured.scss";
 import { useNavigate } from "react-router-dom";
 
 export default function Featured({ type }) {
-  const history = useNavigate();
+  const navigate = useNavigate();
   const clicked = () => {
-    history("/watch");
+    navigate("/watch");
   };
   return (
     <div className="featured">
