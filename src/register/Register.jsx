@@ -4,11 +4,13 @@ export default function Register() {
   return (
     <div className="register">
       <div className="top">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
-          alt=""
-        />
-        <button className="loginBtn">Sign In</button>
+        <div className="wrapper">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+            alt=""
+          />
+          <button className="loginBtn">Sign In</button>
+        </div>
       </div>
       <div className="container">
         <h1>Unlimited movies, Tv shows, and more.</h1>
