@@ -1,7 +1,12 @@
 import { InfoOutlined, PlayArrow } from "@material-ui/icons";
 import "./featured.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function Featured({ type }) {
+  const history = useNavigate();
+  const clicked = () => {
+    history("/watch");
+  };
   return (
     <div className="featured">
       {type && (
@@ -42,7 +47,7 @@ export default function Featured({ type }) {
         </span>
         <div className="buttons">
           <button className="play">
-            <PlayArrow />
+            <PlayArrow onClick={clicked} />
             <span>Play</span>
           </button>
           <button className="more">
